@@ -1,7 +1,7 @@
 package com.lp.string;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import org.junit.Test;
+
 public class StringMethodTest {
 	@Test
 	public void test1(){

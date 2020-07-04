@@ -6,11 +6,6 @@ import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
 public class StringCharByte {
-
-
-
-
-
 	/**
 	 *
 	 * String ----> char[]

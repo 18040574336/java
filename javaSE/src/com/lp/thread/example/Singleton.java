@@ -3,7 +3,7 @@ package com.lp.thread.example;
 import sun.security.jca.GetInstance;
 
 
- class SingletonTest {
+class SingletonTest {
 
 	private SingletonTest() {}
 	private static SingletonTest singletonTest = null;

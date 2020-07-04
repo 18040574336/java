@@ -1,8 +1,7 @@
 package com.lp.string;
 
 
-import java.util.Arrays;
-import java.util.List;
+import java.text.ParseException;
 
 /**
  * 关于StringBuffer和StringBuilder的使用
@@ -27,6 +26,10 @@ import java.util.List;
  * 扩容：为原来的2倍+2，并且将原来数组中的元素复制到新的数组中，如果超过扩容数据，会将存储的字符长度作为新的长度
  *
  * 开发中注意：建议使用StringBuffer(int capacity) 或 StringBuilder(int capacity)构造器，避免扩容，扩容会影响性能。
+ *
+ * 效率 ：
+ *
+ * StringBuilder > StringBuffer > String
  *
  *
  */
@@ -56,6 +59,7 @@ public class StringBufferBuilderTest {
 	 *
 	 */
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
+
 	}
 }

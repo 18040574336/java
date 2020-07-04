@@ -1,6 +1,6 @@
 package com.lp.thread.example;
 /**
- * 售票，三个窗口，100张票，继续Thread
+ * 售票，三个窗口，100张票，实现Runnable
  *1、问题：买票过程中，出现了重票，错票--》出现了线程安全问题。
  *2、问题出现的原因：当某个线程操作车票的过程中，尚未操作完成时，其他线程也参与进来，也操作车票。
  *3、如何解决：当一个线程a在操作ticket时，其他线程不能参与进来，直到线程a操作完成ticket，其他线程才可以操作ticket。
@@ -18,22 +18,18 @@ package com.lp.thread.example;
  *
  *   二 、同步方法
  *
- * 如果操作共享数据的代码完整的声明在一个方法中，我们不妨将此房声明同步的。
- * 1、同步方法仍然涉及到同步监视器，只是不需要我们显式的声明。
- * 2、非静态的同步方法，同步监视器是：this
- *       静态的同步方法，同步监视器是：当前类本身
- *
- *
+ *   如果操作共享数据的代码完整的声明在一个方法中，我们不妨将此房声明同步的。
  *
  * 5、同步的方式，解决了线程的安全问题-----好处
  *    操作同步代码时，只有一个线程参与,其他线程等待。相当于一个单线程的过程，效率低。----局限性
  *
  */
-class WindowThreadExtendSafe extends   Thread{
-    private  static  int ticket = 100;
+class WindowThreadSafe implements  Runnable{
+    private  int ticket = 100;
     @Override
     public void run() {
       while(true){
+          // synchronized (this) ok
           synchronized (WindowThreadSafe.class){
                 if (ticket>0){
                     System.out.println(Thread.currentThread().getName()+":"+"卖票:"+ticket);
@@ -48,8 +44,8 @@ class WindowThreadExtendSafe extends   Thread{
 }
 
 
-class WindowThreadExtendSafe1 extends  Thread{
-    private static int ticket = 100;
+class WindowThreadSafe1 implements  Runnable{
+    private  int ticket = 100;
     @Override
     public void run() {
         while(true){
@@ -57,7 +53,7 @@ class WindowThreadExtendSafe1 extends  Thread{
         }
     }
    //同步方法
-    private  static synchronized void show(){ //同步锁WindowThreadExtendSafe.class
+    private synchronized  void show(){ //默认同步锁this
         if (ticket>0){
             System.out.println(Thread.currentThread().getName()+":"+"卖票:"+ticket);
             ticket--;
@@ -65,20 +61,21 @@ class WindowThreadExtendSafe1 extends  Thread{
     }
 }
 
-public class TicketThreadExtendSafe {
+public class TicketThreadSafe {
 
     public static void main(String[] args) {
-        WindowThreadExtendSafe1 w1 =new WindowThreadExtendSafe1();
-        WindowThreadExtendSafe1 w2 =new WindowThreadExtendSafe1();
-        WindowThreadExtendSafe1 w3 =new WindowThreadExtendSafe1();
+        WindowThreadSafe1 w =new WindowThreadSafe1();
+        Thread t1 = new Thread(w);
+        Thread t2 = new Thread(w);
+        Thread t3 = new Thread(w);
 
-        w1.setName("窗口一");
-        w2.setName("窗口二");
-        w3.setName("窗口三");
+        t1.setName("窗口一");
+        t2.setName("窗口二");
+        t3.setName("窗口三");
 
-        w1.start();
-        w2.start();
-        w3.start();
+        t1.start();
+        t2.start();
+        t3.start();
 
     }
 }
