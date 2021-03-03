@@ -88,7 +88,7 @@ public class StringMethodTest {
 	public void test3(){
 	//1) String replace(char oldChar,char newChar):返回一个新的字符串，它是通过newChar替换此字符串中出现的所有oldChar得到的。
 	    String string = "我爱北京天安门，天安门！";
-	    String replaceChar= string.replace('天', '大');
+	    String replaceChar= string.replace("天", "大");
 	    System.out.println(replaceChar);
 
 	//2) String replace(CharSequence target,CharSequence replacement):使用指定的字面值替换序列替换此字符串所有匹配字面值目标序列的子字符串。

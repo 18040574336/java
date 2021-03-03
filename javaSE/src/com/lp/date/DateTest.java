@@ -27,7 +27,6 @@ public class DateTest {
 
 	@Test
 	public  void DateTimeTestmain(){
-
 		//存在偏移量，year+1900,month+1
 		Date date = new Date(2020,1,4);
 		System.out.println(date);  //Wed Feb 04 00:00:00 CST 3920
