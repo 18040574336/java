@@ -2,7 +2,6 @@ package com.lp.Serializable.java;
 
 
 import java.io.File;
-import java.io.IOException;
 
 /**
  * @author shkstart

@@ -31,13 +31,10 @@ public class Question  implements Serializable {
 
 	private static void subject1() {
 		String msg = "Hello?World";
-
 		//第一种答案
 		//System.out.println(StringUtils.reverse(msg));
-
 		//第二种答案
 		System.out.println(new StringBuffer(msg).reverse().toString());
-
 		//第三种答案
 		StringBuilder sb = new StringBuilder();
 		for (int i = msg.length() - 1; i >= 0; i--) {

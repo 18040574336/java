@@ -1,9 +1,7 @@
 package com.lp.collection;
 
-import javax.xml.bind.SchemaOutputResolver;
-import java.lang.reflect.Array;
-import java.math.BigDecimal;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MapTest {
 	public static void main(String[] args) {

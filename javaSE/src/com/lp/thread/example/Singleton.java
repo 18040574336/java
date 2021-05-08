@@ -35,7 +35,7 @@ public class Singleton {
 			@Override
 			public void run() {
 				Thread.currentThread().setName("线程一");
-				System.out.println(Thread.currentThread().getName()+"=="+SingletonTest.getInstance());
+				System.out.println(Thread.currentThread().getName()+"=="+ SingletonTest.getInstance());
 			}
 		 }.start();
 
@@ -44,7 +44,7 @@ public class Singleton {
 			@Override
 			public void run() {
 				Thread.currentThread().setName("线程二");
-				System.out.println(Thread.currentThread().getName()+"=="+SingletonTest.getInstance());
+				System.out.println(Thread.currentThread().getName()+"=="+ SingletonTest.getInstance());
 
 			}
 		}.start();

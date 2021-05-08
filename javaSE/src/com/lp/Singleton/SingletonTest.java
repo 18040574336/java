@@ -13,7 +13,6 @@ public class SingletonTest {
 }
 
 
-
 /**
  *
  * 饿汉式
@@ -21,7 +20,7 @@ public class SingletonTest {
  */
 class SingletonHungry {
 
-	private static   SingletonHungry singleton = new SingletonHungry();
+	private static SingletonHungry singleton = new SingletonHungry();
 	private SingletonHungry(){}
 
 	public static SingletonHungry getInstance(){
@@ -37,7 +36,7 @@ class SingletonHungry {
  */
 class SingletonLazy{
 
-	private static  SingletonLazy singleton = null;
+	private static SingletonLazy singleton = null;
 
 	private SingletonLazy(){}
 
@@ -57,7 +56,7 @@ class SingletonLazy{
  */
 class SingletonSyn{
 
-	private static  volatile  SingletonSyn singleton = null;
+	private static  volatile SingletonSyn singleton = null;
 	private SingletonSyn(){}
 
 	public synchronized  static SingletonSyn getInstance(){
@@ -70,7 +69,6 @@ class SingletonSyn{
 }
 
 
-
 /***
  *
  *  双重检查锁
@@ -78,7 +76,7 @@ class SingletonSyn{
  */
 class SingletonDoubleCheck{
 
-	private static  volatile  SingletonDoubleCheck singleton = null;
+	private static  volatile SingletonDoubleCheck singleton = null;
 	private SingletonDoubleCheck(){}
 
 	public  static SingletonDoubleCheck getInstance(){
@@ -106,7 +104,7 @@ class SingletonInner{
 
 	private SingletonInner (){};
 
-	public  static  SingletonInner  getInstance(){
+	public  static SingletonInner getInstance(){
 		return Holder.singleton;
 	}
 

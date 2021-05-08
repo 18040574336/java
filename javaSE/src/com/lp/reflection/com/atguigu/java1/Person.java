@@ -5,7 +5,7 @@ package com.lp.reflection.com.atguigu.java1;
  * @create 2019 下午 3:12
  */
 @MyAnnotation(value="hi")
-public class Person extends Creature<String> implements Comparable<String>,MyInterface{
+public class Person extends Creature<String> implements Comparable<String>, MyInterface {
 
     private String name;
     int age;

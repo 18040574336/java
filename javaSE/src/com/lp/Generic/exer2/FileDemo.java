@@ -1,4 +1,4 @@
-package com.atguigu.exer2;
+package com.lp.Generic.exer2;
 
 import org.junit.Test;
 

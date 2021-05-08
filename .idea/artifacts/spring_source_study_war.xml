@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-source-study:war">
+    <output-path>D:/dongnao/idea/dongnao_study/01-spring/01-spring-source/03-spring-source-study/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>spring-source-study</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring-source-study.war">
+      <element id="artifact" artifact-name="spring-source-study:war exploded" />
+    </root>
+  </artifact>
+</component>
