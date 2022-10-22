@@ -2,6 +2,7 @@ package com.gantang.interview;
 
 public class TreeTest {
 	public static void main(String[] args) {
+		Object o = new Object();
 		TreeNode p = new TreeNode(1);
 
 		p.left = new TreeNode(2);

@@ -19,7 +19,7 @@ public class FilesTest {
 	@Test
 	public void test1() throws IOException{
 		Path path1 = Paths.get("d:\\nio", "hello.txt");
-		Path path2 = Paths.get("atguigu.txt");
+		Path path2 = Paths.get("lp.txt");
 		
 //		Path copy(Path src, Path dest, CopyOption … how) : 文件的复制
 		//要想复制成功，要求path1对应的物理上的文件存在。path1对应的文件没有要求。
@@ -54,7 +54,7 @@ public class FilesTest {
 	@Test
 	public void test2() throws IOException{
 		Path path1 = Paths.get("d:\\nio", "hello.txt");
-		Path path2 = Paths.get("atguigu.txt");
+		Path path2 = Paths.get("lp.txt");
 //		boolean exists(Path path, LinkOption … opts) : 判断文件是否存在
 		System.out.println(Files.exists(path2, LinkOption.NOFOLLOW_LINKS));
 

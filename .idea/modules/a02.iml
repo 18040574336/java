@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="com.liangpen" externalSystemModuleVersion="1.0-SNAPSHOT" linkedProjectId=":a02" linkedProjectPath="$MODULE_DIR$/../../gradle_study/a02" rootProjectPath="$MODULE_DIR$/../../gradle_study" />
+</module>

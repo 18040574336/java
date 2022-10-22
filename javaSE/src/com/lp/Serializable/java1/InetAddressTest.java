@@ -43,7 +43,7 @@ public class InetAddressTest {
 
             System.out.println(inet1);
 
-            InetAddress inet2 = InetAddress.getByName("www.atguigu.com");
+            InetAddress inet2 = InetAddress.getByName("www.lp.com");
             System.out.println(inet2);
 
             InetAddress inet3 = InetAddress.getByName("127.0.0.1");

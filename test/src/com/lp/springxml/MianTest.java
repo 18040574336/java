@@ -1,41 +1,41 @@
 package com.lp.springxml;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class MianTest {
 
     public static void main(String[] args) {
-        Double versionNo =1d;
-        versionNo=  versionNo == null ? 1d: versionNo++;
-        System.out.println(versionNo);
+        Long a =11111L;
+        System.out.println(11111==a);
+//        try {
+//            Thread.sleep(1100);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
 
-        List<String> list = new ArrayList<>();
-        list.add("1");
-        list.add("2");
-        list.add("3");
-        list.add("4");
-        for (String i  : list){
-            if (i.equals("3")){
-                list.remove(i);
+
+    }
+
+    public static boolean containsDuplicate(int[] nums) {
+        //处理代码写在此处
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 1; j < nums.length; j++) {
+                if (nums[i] == nums[j] && i != j) {
+                    return true;
+                }
             }
         }
-        System.out.println(list);
-//       List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4));
-//       for (Integer i  : list ){
-//           if (i ==1){
-//               list.remove(i);
-//           }
-//       }
+        return false;
+    }
 
-//     List<String> list = new ArrayList<>(Arrays.asList("1","2","3"));
-//
-//
-//        for(String x:list){
-//            if(x.equals("2")){
-//                list.remove(x);
-//            }
-//        }
-//        System.out.println(list);
+    public static boolean containsDuplicate11(int[] arr) {
+        for (int i = 0;i<arr.length;i++){
+            if (arr[i] == arr[arr.length-i]){
+                return true;
+            }
+        }
+        return  false;
+
     }
 }

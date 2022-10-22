@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ASMPluginConfiguration">
+    <asm skipDebug="false" skipFrames="false" skipCode="false" expandFrames="false" />
+    <groovy codeStyle="LEGACY" />
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FindBugsConfigurable">
     <option name="make" value="true" />
     <option name="effort" value="default" />
@@ -7,23 +12,44 @@
     <option name="excludeFilter" value="" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://D:/dongnao/idea/dongnao_study/01-spring/01-spring-source/02-spring-v1" />
-    <file type="web" url="file://D:/dongnao/idea/dongnao_study/01-spring/01-spring-source/02-spring-v2" />
-    <file type="web" url="file://D:/dongnao/idea/dongnao_study/01-spring/01-spring-source/02-spring-v3" />
-    <file type="web" url="file://D:/dongnao/idea/dongnao_study/01-spring/01-spring-source/02-spring-v4" />
-    <file type="web" url="file://D:/dongnao/idea/dongnao_study/01-spring/01-spring-source/03-spring-source-study" />
-    <file type="web" url="file://D:/dongnao/idea/dongnao_study/01-spring/01-spring-source/04-spring-mvc" />
+    <file type="web" url="file://$PROJECT_DIR$/../../../dongnao/idea/dongnao_study/01-spring/01-spring-source/02-spring-v1" />
+    <file type="web" url="file://$PROJECT_DIR$/../../../dongnao/idea/dongnao_study/01-spring/01-spring-source/02-spring-v2" />
+    <file type="web" url="file://$PROJECT_DIR$/../../../dongnao/idea/dongnao_study/01-spring/01-spring-source/02-spring-v3" />
+    <file type="web" url="file://$PROJECT_DIR$/../../../dongnao/idea/dongnao_study/01-spring/01-spring-source/02-spring-v4" />
+    <file type="web" url="file://$PROJECT_DIR$/../../../dongnao/idea/dongnao_study/01-spring/01-spring-source/03-spring-source-study" />
+    <file type="web" url="file://$PROJECT_DIR$/../../../dongnao/idea/dongnao_study/01-spring/01-spring-source/04-spring-mvc" />
+    <file type="web" url="file://$PROJECT_DIR$/concurrency" />
+    <file type="web" url="file://$PROJECT_DIR$/gradle_study" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-cloud" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/springboot/pom.xml" />
-        <option value="$PROJECT_DIR$/spring/pom.xml" />
         <option value="$PROJECT_DIR$/hutool/pom.xml" />
+        <option value="$PROJECT_DIR$/orika/pom.xml" />
+        <option value="$PROJECT_DIR$/webservice/pom.xml" />
+        <option value="$PROJECT_DIR$/devtool/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../dongnao/热门框架原理源码/Lsn8_手写 Spring AOP二_hash_2020-09-01/课件/my-spring/pom.xml" />
+        <option value="$PROJECT_DIR$/springsource/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../dongnao/project/gpmall-pc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud/eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/springcloud/eurekaserver/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SuppressionsComponent">

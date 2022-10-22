@@ -23,7 +23,7 @@ package com.lp.collection.map;///*
 // *
 // */
 //
-//package com.atguigu.src;
+//package com.lp.src;
 //import java.io.*;
 //import java.util.*;
 //

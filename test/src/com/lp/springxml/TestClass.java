@@ -85,8 +85,8 @@ public class TestClass {
 //		Integer maxValue = list.stream().collect(Collectors.collectingAndThen(Collectors.maxBy((a, b) -> a - b), Optional::get));
 //
 //
-//		Student s = new Student();
-//		Student s1 = new Student();
+//		com.lp.Student s = new com.lp.Student();
+//		com.lp.Student s1 = new com.lp.Student();
 //		System.out.println(s.toString().equals(s1.toString()));
 	}
 
@@ -158,7 +158,7 @@ public class TestClass {
 	class Student extends  Person1{
 		@Override
 		public String toString() {
-			return "Student{}";
+			return "com.lp.Student{}";
 		}
 
 

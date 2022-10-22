@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 
 import static java.lang.System.out;
 
-public class SerializableTest {
+public  class SerializableTest {
 
 	@Test
 	public void test(){

@@ -1,5 +1,7 @@
 package com.gantang.interview;
 
+import org.junit.Test;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.stream.IntStream;
@@ -12,7 +14,7 @@ public class Question  implements Serializable {
 	private static Date d = null;
 
 	public static void main(String[] args) {
-		System.out.println("测网速");
+		System.out.println(d);
 //        subject1();
 //
 //        subject2(5);
@@ -61,7 +63,16 @@ public class Question  implements Serializable {
 	private static int factorial(int n) {
 		if (n <= 1)
 			return 1;
-		return factorial(n - 1) * n;
+		int a =  factorial(n - 1) * n;
+		System.out.println(a);
+		return a ;
+	}
+
+	@Test
+	public  void test(){
+
+		int factorial = factorial(5);
+		System.out.println(factorial);
 	}
 
 	private static void subject2(int n) {

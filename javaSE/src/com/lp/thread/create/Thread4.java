@@ -1,9 +1,6 @@
 package com.lp.thread.create;
 
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.*;
 
 /***
  * 创建线程方式4：线程池
