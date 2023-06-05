@@ -7,4 +7,5 @@ package service;
 public interface TestService {
 
      void  say(Integer a );
+     void  say1(Integer a );
 }
